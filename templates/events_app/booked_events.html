@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+Booked Events 
+{% endblock %}
+
+{% block body %}
+
+<h1>{{ request.user.first_name }} {{ request.user.last_name }} your Booked Events</h1>
+
+{% if user_bookings %}
+    <ul class="events-list">
+        {% for booking in user_bookings %}
+        <li class="event-item"></li>
+            <h2 class="event-name">{{ booking.event.name }}</h2>
+            <p class="event-date">Date: <strong>{{ booking.event.date }}</strong></p>
+            <p class="event-location">Location: <strong>{{ booking.event.location }}</strong></p>
+            <p class="event-description">Description: {{ booking.event.description }}</p>
+            <p class="event-category">Category: <strong>{{ booking.event.get_category_display }}</strong></p>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You have not booked any events yet.</p>
+{% endif %}
+
+{% endblock %}

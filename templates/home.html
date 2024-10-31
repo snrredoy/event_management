@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block body %}
+
+<h2>Search Events</h2>
+
+<form class="search_form" method="GET" action="{% url 'home' %}">
+    <select class="select_search_form" name="category">
+        <option value="">All Categories</option>
+        {% for value, label in categories %}
+            <option value="{{ value }}" {% if category_filter == value %}selected{% endif %}>{{ label }}</option>
+        {% endfor %}
+    </select>
+    <input class="search_form_input" type="text" name="q" placeholder="Search by name, date(yyyy-mm-dd h:m:s), or location" value="{{ search_query|default:'' }}">
+    <button class="search_form_button" type="submit">Search</button>
+</form>
+
+<h2>Events</h2> <hr>
+
+<div class="events-container">
+    <ul class="events-list">
+        {% for event in events %}
+            <li class="event-item">
+                <h2 class="event-name">{{ event.name }}</h2>
+                <p class="event-date">Date: <strong>{{ event.date }}</strong></p>
+                <p class="event-location">Location: <strong>{{ event.location }}</strong></p>
+                <p class="event-description">Description: {{ event.description }}</p>
+                <p class="event-category">Category: <strong>{{ event.get_category_display }}</strong></p>
+                <p class="event-booked-count">Booked Slots: <strong>{{ event.booked_count }}</strong> / <strong>{{ event.capacity }}</strong></p>
+                <div class="event-actions">
+                    {% if request.user.is_authenticated %}
+                        {% if event.id in user_event_ids %}
+                            <span class="status booked">Booked </span> 
+                        {% elif event.capacity <= event.booked_count %}
+                            <span class="status fully-booked">Fully Booked </span>
+                        {% else %}
+                            <a href="{% url 'book_event' event.id %}" class="book-event-button">Book Event </a>
+                        {% endif %}
+                    {% else %}
+                        <a href="{% url 'login' %}" class="login-prompt">Login to Book </a>
+                    {% endif %}
+                    {% if user.is_authenticated and user == event.creator or user.is_superuser %}
+                        <a href="{% url 'update_event' event.id %}" class="edit-button">Edit</a> |
+                        <a href="{% url 'delete_event' event.id %}" class="delete-button">Delete</a>
+                    {% endif %}
+                </div>
+            </li>
+        {% empty %}
+            <li class="no-events">No events found matching your search.</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="pagination">
+    <table>
+        <tr>
+            <td>
+                {% if events.has_previous %}
+                    <a href="?page=1">« First |</a>
+                    <a href="?page={{ events.previous_page_number }}">Previous</a>
+                {% endif %}
+            </td>
+            <td>
+                {% for num in events.paginator.page_range %}
+                    {% if num == events.number %}
+                        <span class="current">{{ num }}</span>
+                    {% else %}
+                        <a href="?page={{ num }}{% if search_query %}&q={{ search_query }}{% endif %}{% if category_filter %}&category={{ category_filter }}{% endif %}">{{ num }} </a>
+                    {% endif %}
+                {% endfor %}
+            </td>
+            <td>
+                {% if events.has_next %}
+                    <a href="?page={{ events.next_page_number }}">Next </a>
+                    <a href="?page={{ events.paginator.num_pages }}">Last »</a>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+
+{% endblock %}

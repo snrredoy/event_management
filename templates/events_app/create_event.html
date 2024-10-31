@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+Create Event 
+{% endblock %}
+
+{% block body %}
+
+<h1>Create Event</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Create Event</button>
+    <a class="back-homepage-button" href="{% url 'home' %}">Cancel</a>
+</form>
+
+{% endblock %}

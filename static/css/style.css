@@ -1,0 +1,266 @@
+  .navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    width: 85%;
+    z-index: 1000;
+  }
+
+  body {
+    margin-top: 60px; 
+    font-family: Arial, sans-serif;
+
+  }
+
+  .navbar a {
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-right: 10px;
+  }
+
+  .navbar a:hover {
+    background-color: #24e7d4;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 2s;
+  }
+
+  .navbar a.active {
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: bold;
+  }
+
+
+  .search_form{
+    background-color: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .select_search_form,
+  .search_form_input[type="text"]
+  {
+    width: 40%;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .select_search_form,
+  .search_form_input[type="text"],
+  .search_form_button {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .search_form_button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 4px;
+    width: 10%;
+  }
+
+  .search_form_button:hover {
+    background-color: #3b91f4;
+    color: black;
+  }
+
+.events-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.events-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-name {
+    font-size: 1.5em;
+    margin: 0;
+    color: #ffffff;
+}
+
+.event-date,
+.event-location,
+.event-description,
+.event-category,
+.event-booked-count {
+    margin: 5px 0;
+}
+
+.event-actions {
+    margin-top: 10px;
+}
+
+.book-event-button,
+.login-prompt,
+.edit-button,
+.delete-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 5px;
+    transition: background-color 5s;
+}
+
+.book-event-button:hover,
+.login-prompt:hover,
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: background-color 2s;
+    text-decoration: none;
+}
+
+.status {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.booked {
+    color: #28a745;
+}
+
+.fully-booked {
+    color: #dc3545;
+}
+
+.book-event-button,.login-prompt{
+    margin-right: 10px;
+}
+
+.no-events {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.profile-title {
+    font-size: 1.8em;
+    color: #ffffff;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-details p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.profile-details p strong {
+    color: #ffffff;
+}
+
+.update-profile-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #006532;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.update-profile-button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+.back-profile-button,.back-homepage-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 4px 12px;
+    color: #4493f8;
+    background-color: #161b22;
+    text-decoration: none;
+    border: 1px solid #4493f8;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-profile-button:hover,.back-homepage-button:hover {
+    background-color: #4493f8;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination a {
+  margin: 0 5px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: #007bff;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+.pagination strong {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.pagination .disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

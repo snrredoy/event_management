@@ -1,0 +1,703 @@
+[
+    {
+        "model": "events_app.event",
+        "pk": 1,
+        "fields": {
+            "name": "Annual Tech Conference",
+            "date": "2024-11-01T10:00:00Z",
+            "location": "Banani, Dhaka",
+            "description": "An annual gathering for tech enthusiasts to discuss latest trends.",
+            "category": "conference",
+            "capacity": 150,
+            "created_at": "2024-10-01T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 51,
+        "fields": {
+            "name": "Music Concert",
+            "date": "2024-11-02T19:00:00Z",
+            "location": "Gulshan, Dhaka",
+            "description": "Live concert with local and international artists.",
+            "category": "concert",
+            "capacity": 300,
+            "created_at": "2024-10-02T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 52,
+        "fields": {
+            "name": "Photography Workshop",
+            "date": "2024-11-03T09:00:00Z",
+            "location": "Dhanmondi, Dhaka",
+            "description": "Hands-on workshop for photography enthusiasts.",
+            "category": "workshop",
+            "capacity": 40,
+            "created_at": "2024-10-03T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 54,
+        "fields": {
+            "name": "Business Seminar",
+            "date": "2024-11-04T15:00:00Z",
+            "location": "Mirpur, Dhaka",
+            "description": "Seminar focused on business development strategies.",
+            "category": "seminar",
+            "capacity": 120,
+            "created_at": "2024-10-04T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 5,
+        "fields": {
+            "name": "Art Exhibition",
+            "date": "2024-11-05T11:00:00Z",
+            "location": "Shyamoli, Dhaka",
+            "description": "An exhibition showcasing local artists.",
+            "category": "exhibition",
+            "capacity": 200,
+            "created_at": "2024-10-05T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 6,
+        "fields": {
+            "name": "AI Webinar",
+            "date": "2024-11-06T18:00:00Z",
+            "location": "Online",
+            "description": "A virtual event discussing advancements in artificial intelligence.",
+            "category": "webinar",
+            "capacity": 500,
+            "created_at": "2024-10-06T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 7,
+        "fields": {
+            "name": "Startup Networking",
+            "date": "2024-11-07T16:00:00Z",
+            "location": "Uttara, Dhaka",
+            "description": "Networking event for startup founders and investors.",
+            "category": "networking",
+            "capacity": 75,
+            "created_at": "2024-10-07T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 8,
+        "fields": {
+            "name": "Spring Festival",
+            "date": "2024-11-08T10:00:00Z",
+            "location": "Bashundhara, Dhaka",
+            "description": "Festival celebrating the beauty of spring.",
+            "category": "festival",
+            "capacity": 500,
+            "created_at": "2024-10-08T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 9,
+        "fields": {
+            "name": "Theater Night",
+            "date": "2024-11-09T20:00:00Z",
+            "location": "Mohakhali, Dhaka",
+            "description": "An evening of theater performances.",
+            "category": "theater",
+            "capacity": 200,
+            "created_at": "2024-10-09T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 10,
+        "fields": {
+            "name": "Film Screening",
+            "date": "2024-11-10T14:00:00Z",
+            "location": "Banani, Dhaka",
+            "description": "Screening of award-winning short films.",
+            "category": "film",
+            "capacity": 150,
+            "created_at": "2024-10-10T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 11,
+        "fields": {
+            "name": "Tech Meetup",
+            "date": "2024-11-11T17:00:00Z",
+            "location": "Dhanmondi, Dhaka",
+            "description": "Monthly meetup for technology enthusiasts.",
+            "category": "meetup",
+            "capacity": 80,
+            "created_at": "2024-10-11T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 12,
+        "fields": {
+            "name": "Charity Fundraiser",
+            "date": "2024-11-12T18:00:00Z",
+            "location": "Uttara, Dhaka",
+            "description": "Fundraiser event to support local charities.",
+            "category": "fundraiser",
+            "capacity": 150,
+            "created_at": "2024-10-12T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 13,
+        "fields": {
+            "name": "Football Match",
+            "date": "2024-11-13T19:00:00Z",
+            "location": "Gulshan, Dhaka",
+            "description": "Friendly football match open to all.",
+            "category": "sport",
+            "capacity": 250,
+            "created_at": "2024-10-13T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 14,
+        "fields": {
+            "name": "Language Class",
+            "date": "2024-11-14T10:00:00Z",
+            "location": "Banani, Dhaka",
+            "description": "Beginner's language class for Spanish.",
+            "category": "class",
+            "capacity": 40,
+            "created_at": "2024-10-14T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 15,
+        "fields": {
+            "name": "Mountain Retreat",
+            "date": "2024-11-15T09:00:00Z",
+            "location": "Outskirts of Dhaka",
+            "description": "A peaceful retreat in nature.",
+            "category": "retreat",
+            "capacity": 30,
+            "created_at": "2024-10-15T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 16,
+        "fields": {
+            "name": "Coding Hackathon",
+            "date": "2024-11-16T08:00:00Z",
+            "location": "Mohakhali, Dhaka",
+            "description": "24-hour hackathon focusing on social impact.",
+            "category": "hackathon",
+            "capacity": 100,
+            "created_at": "2024-10-16T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 17,
+        "fields": {
+            "name": "Autumn Fair",
+            "date": "2024-11-17T11:00:00Z",
+            "location": "Bashundhara, Dhaka",
+            "description": "Seasonal fair with crafts, food, and games.",
+            "category": "fair",
+            "capacity": 300,
+            "created_at": "2024-10-17T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 18,
+        "fields": {
+            "name": "Community Open House",
+            "date": "2024-11-18T15:00:00Z",
+            "location": "Mirpur, Dhaka",
+            "description": "Open house event for new residents to connect.",
+            "category": "open_house",
+            "capacity": 60,
+            "created_at": "2024-10-18T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 19,
+        "fields": {
+            "name": "Industry Panel Discussion",
+            "date": "2024-11-19T14:00:00Z",
+            "location": "Gulshan, Dhaka",
+            "description": "Insights from leaders in various industries.",
+            "category": "panel",
+            "capacity": 120,
+            "created_at": "2024-10-19T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 20,
+        "fields": {
+            "name": "Coding Competition",
+            "date": "2024-11-20T13:00:00Z",
+            "location": "Dhanmondi, Dhaka",
+            "description": "Coding challenge open to all skill levels.",
+            "category": "competition",
+            "capacity": 100,
+            "created_at": "2024-10-20T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 21,
+        "fields": {
+            "name": "Trade Show Expo",
+            "date": "2024-11-21T09:00:00Z",
+            "location": "Banani, Dhaka",
+            "description": "Annual trade show featuring local and international businesses.",
+            "category": "trade_show",
+            "capacity": 400,
+            "created_at": "2024-10-21T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 22,
+        "fields": {
+            "name": "Book Reading Session",
+            "date": "2024-11-22T16:00:00Z",
+            "location": "Dhanmondi, Dhaka",
+            "description": "Book reading by local authors, followed by Q&A.",
+            "category": "book_reading",
+            "capacity": 60,
+            "created_at": "2024-10-22T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 23,
+        "fields": {
+            "name": "Community Service Day",
+            "date": "2024-11-23T08:00:00Z",
+            "location": "Mirpur, Dhaka",
+            "description": "Join us for a day of community service and outreach.",
+            "category": "community_service",
+            "capacity": 200,
+            "created_at": "2024-10-23T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 24,
+        "fields": {
+            "name": "Culinary Workshop",
+            "date": "2024-11-24T12:00:00Z",
+            "location": "Gulshan, Dhaka",
+            "description": "Hands-on workshop with renowned chefs.",
+            "category": "culinary",
+            "capacity": 40,
+            "created_at": "2024-10-24T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 25,
+        "fields": {
+            "name": "Art Exhibition",
+            "date": "2024-11-25T18:00:00Z",
+            "location": "Uttara, Dhaka",
+            "description": "Exhibition showcasing local artists' works.",
+            "category": "art_show",
+            "capacity": 200,
+            "created_at": "2024-10-25T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 26,
+        "fields": {
+            "name": "Science Fair",
+            "date": "2024-11-26T10:00:00Z",
+            "location": "Banani, Dhaka",
+            "description": "Interactive science fair with fun experiments for all ages.",
+            "category": "science_fair",
+            "capacity": 300,
+            "created_at": "2024-10-26T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 27,
+        "fields": {
+            "name": "Fashion Show",
+            "date": "2024-11-27T19:00:00Z",
+            "location": "Bashundhara, Dhaka",
+            "description": "Showcasing latest trends from top designers.",
+            "category": "fashion_show",
+            "capacity": 150,
+            "created_at": "2024-10-27T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 28,
+        "fields": {
+            "name": "Virtual Networking Event",
+            "date": "2024-11-28T14:00:00Z",
+            "location": "Online",
+            "description": "Virtual networking event for professionals across industries.",
+            "category": "virtual_event",
+            "capacity": 100,
+            "created_at": "2024-10-28T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 29,
+        "fields": {
+            "name": "Cultural Festival",
+            "date": "2024-11-29T11:00:00Z",
+            "location": "Mirpur, Dhaka",
+            "description": "Experience cultural performances, food, and art.",
+            "category": "cultural_event",
+            "capacity": 400,
+            "created_at": "2024-10-29T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 30,
+        "fields": {
+            "name": "Pet Expo",
+            "date": "2024-11-30T10:00:00Z",
+            "location": "Gulshan, Dhaka",
+            "description": "Expo for pet lovers and owners to explore pet products and services.",
+            "category": "pet_expo",
+            "capacity": 200,
+            "created_at": "2024-10-30T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 31,
+        "fields": {
+            "name": "Networking Dinner",
+            "date": "2024-12-01T19:00:00Z",
+            "location": "Dhaka Club, Dhaka",
+            "description": "An exclusive networking dinner for professionals.",
+            "category": "networking",
+            "capacity": 100,
+            "created_at": "2024-11-01T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 32,
+        "fields": {
+            "name": "Hackathon 2024",
+            "date": "2024-12-02T08:00:00Z",
+            "location": "Bashundhara R/A, Dhaka",
+            "description": "24-hour hackathon for tech enthusiasts.",
+            "category": "hackathon",
+            "capacity": 200,
+            "created_at": "2024-11-02T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 33,
+        "fields": {
+            "name": "Seminar on Climate Change",
+            "date": "2024-12-03T10:00:00Z",
+            "location": "Shahbag, Dhaka",
+            "description": "A seminar focusing on climate change impacts and solutions.",
+            "category": "seminar",
+            "capacity": 150,
+            "created_at": "2024-11-03T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 34,
+        "fields": {
+            "name": "Web Development Workshop",
+            "date": "2024-12-04T14:00:00Z",
+            "location": "Dhanmondi, Dhaka",
+            "description": "Workshop on modern web development techniques.",
+            "category": "workshop",
+            "capacity": 50,
+            "created_at": "2024-11-04T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 35,
+        "fields": {
+            "name": "Film Screening Night",
+            "date": "2024-12-05T17:00:00Z",
+            "location": "Uttara, Dhaka",
+            "description": "Screening of independent films followed by discussions.",
+            "category": "film",
+            "capacity": 80,
+            "created_at": "2024-11-05T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 36,
+        "fields": {
+            "name": "Annual Charity Concert",
+            "date": "2024-12-06T19:30:00Z",
+            "location": "Bangladesh Army Stadium, Dhaka",
+            "description": "Join us for a charity concert featuring popular bands.",
+            "category": "concert",
+            "capacity": 500,
+            "created_at": "2024-11-06T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 37,
+        "fields": {
+            "name": "Yoga Retreat",
+            "date": "2024-12-07T08:00:00Z",
+            "location": "Narayanganj, Dhaka",
+            "description": "A relaxing yoga retreat for stress relief and rejuvenation.",
+            "category": "retreat",
+            "capacity": 30,
+            "created_at": "2024-11-07T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 38,
+        "fields": {
+            "name": "Theater Performance: Hamlet",
+            "date": "2024-12-08T16:00:00Z",
+            "location": "National Theater, Dhaka",
+            "description": "Enjoy a classic performance of Shakespeare's Hamlet.",
+            "category": "theater",
+            "capacity": 250,
+            "created_at": "2024-11-08T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 39,
+        "fields": {
+            "name": "Photography Exhibition",
+            "date": "2024-12-09T11:00:00Z",
+            "location": "Dhanmondi Lake, Dhaka",
+            "description": "Exhibition of photography by local artists.",
+            "category": "art_show",
+            "capacity": 100,
+            "created_at": "2024-11-09T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 40,
+        "fields": {
+            "name": "Open House for Startups",
+            "date": "2024-12-10T15:00:00Z",
+            "location": "Uttara, Dhaka",
+            "description": "An open house event showcasing local startups.",
+            "category": "open_house",
+            "capacity": 200,
+            "created_at": "2024-11-10T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 41,
+        "fields": {
+            "name": "Sports Day Celebration",
+            "date": "2024-12-11T09:00:00Z",
+            "location": "Muktijoddha Smrity Stadium, Dhaka",
+            "description": "A day filled with sports activities for everyone.",
+            "category": "sport",
+            "capacity": 300,
+            "created_at": "2024-11-11T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 42,
+        "fields": {
+            "name": "Panel Discussion on Innovation",
+            "date": "2024-12-12T13:00:00Z",
+            "location": "Bangabandhu International Conference Center, Dhaka",
+            "description": "Join industry leaders for a discussion on innovation.",
+            "category": "panel",
+            "capacity": 150,
+            "created_at": "2024-11-12T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 43,
+        "fields": {
+            "name": "Festival of Lights",
+            "date": "2024-12-13T18:00:00Z",
+            "location": "Ramna Park, Dhaka",
+            "description": "Celebrate the Festival of Lights with music and food.",
+            "category": "festival",
+            "capacity": 500,
+            "created_at": "2024-11-13T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 44,
+        "fields": {
+            "name": "Cooking Class: Traditional Bangladeshi Dishes",
+            "date": "2024-12-14T11:00:00Z",
+            "location": "Bashundhara, Dhaka",
+            "description": "Learn to cook traditional Bangladeshi dishes from experts.",
+            "category": "culinary",
+            "capacity": 20,
+            "created_at": "2024-11-14T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 45,
+        "fields": {
+            "name": "Charity Fundraiser Gala",
+            "date": "2024-12-15T19:00:00Z",
+            "location": "Pan Pacific Sonargaon, Dhaka",
+            "description": "A gala evening to raise funds for local charities.",
+            "category": "fundraiser",
+            "capacity": 300,
+            "created_at": "2024-11-15T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 46,
+        "fields": {
+            "name": "Virtual Reality Experience Day",
+            "date": "2024-12-16T10:00:00Z",
+            "location": "Online",
+            "description": "Experience the latest in virtual reality technology.",
+            "category": "virtual_event",
+            "capacity": 100,
+            "created_at": "2024-11-16T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 47,
+        "fields": {
+            "name": "National Science Conference",
+            "date": "2024-12-17T09:00:00Z",
+            "location": "Dhaka University, Dhaka",
+            "description": "Annual conference bringing together scientists and researchers.",
+            "category": "conference",
+            "capacity": 500,
+            "created_at": "2024-11-17T10:00:00Z",
+            "creator": 2
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 48,
+        "fields": {
+            "name": "Children's Art Workshop",
+            "date": "2024-12-18T10:00:00Z",
+            "location": "Shankhari Bazar, Dhaka",
+            "description": "A fun-filled workshop for children to explore their creativity.",
+            "category": "workshop",
+            "capacity": 30,
+            "created_at": "2024-11-18T10:00:00Z",
+            "creator": 3
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 49,
+        "fields": {
+            "name": "Meetup for Entrepreneurs",
+            "date": "2024-12-19T18:00:00Z",
+            "location": "Mohammadpur, Dhaka",
+            "description": "Network with fellow entrepreneurs and share ideas.",
+            "category": "meetup",
+            "capacity": 100,
+            "created_at": "2024-11-19T10:00:00Z",
+            "creator": 1
+        }
+    },
+    {
+        "model": "events_app.event",
+        "pk": 50,
+        "fields": {
+            "name": "End of Year Party",
+            "date": "2024-12-20T20:00:00Z",
+            "location": "Dhaka, Bangladesh",
+            "description": "Celebrate the end of the year with food, drinks, and music.",
+            "category": "festival",
+            "capacity": 400,
+            "created_at": "2024-11-20T10:00:00Z",
+            "creator": 2
+        }
+    }
+]
+

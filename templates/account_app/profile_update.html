@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+Profile Update 
+{% endblock %}
+
+{% block body %}
+
+<h1>{{ request.user.first_name }} {{ request.user.last_name }} update your Profile </h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ user_form.as_p }}
+    <button type="submit">Update Profile</button>
+    <a class="back-profile-button" href="{% url 'profile' %}">Back to Profile</a>
+</form>
+
+
+
+{% endblock %}

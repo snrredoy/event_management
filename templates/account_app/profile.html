@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block body %}
+<div class="profile-container">
+    <h2 class="profile-title">{{ request.user.first_name }} {{ request.user.last_name }}'s Profile</h2>
+    
+    <div class="profile-details">
+        <p><strong>First Name:</strong> {{ user.first_name }}</p>
+        <p><strong>Last Name:</strong> {{ user.last_name }}</p>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Last Login:</strong> {{ user.last_login }}</p>
+    </div>
+
+    <a href="{% url 'profile_update' %}" class="update-profile-button">Update your Profile</a>
+</div>
+{% endblock %}
